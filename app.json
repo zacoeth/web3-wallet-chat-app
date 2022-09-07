@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "scheme": "walletchat",
+    "android": {
+      "package": "com.zacoeth.walletchatapp"
+    },
+    "ios": {
+      "bundleIdentifier": "com.zacoeth.walletchatapp"
+    }
+  }
+}
