@@ -79,5 +79,13 @@ public class MainActivity extends ReactActivity {
       // More on this on https://reactjs.org/blog/2022/03/29/react-v18.html
       return BuildConfig.IS_NEW_ARCHITECTURE_ENABLED;
     }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+      super.onConfigurationChanged(newConfig);
+      Intent intent = new Intent("onConfigurationChanged");
+      intent.putExtra("newConfig", newConfig);
+      sendBroadcast(intent);
+    }
   }
 }

@@ -1,4 +1,5 @@
 import './shim.js';
+import React from 'react';
 import { Platform, StyleSheet, Text, View } from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import WalletConnectProvider from '@walletconnect/react-native-dapp';
